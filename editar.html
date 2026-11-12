@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Editor de portefólio — Santiago Correia</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="editor.css">
+  <script defer src="dados.js"></script><script defer src="editor.js"></script>
+</head>
+<body>
+  <header class="editor-header"><div class="wrap header-inner"><div class="logo">SC<span>.</span> <small>Editor do portefólio</small></div><a href="index.html" target="_blank" rel="noopener noreferrer">Ver site ↗</a></div></header>
+  <main class="wrap">
+    <div class="intro"><span class="eyebrow">PERSONALIZAÇÃO SIMPLES</span><h1>Editar o meu portefólio<span>.</span></h1><p>Altera as informações, adiciona projetos e coloca os links. Quando terminares, descarrega o ficheiro atualizado e substitui o <code>dados.js</code> no GitHub.</p></div>
+    <div class="notice"><strong>Como funciona:</strong> as alterações são guardadas temporariamente neste navegador. Para ficarem visíveis no site publicado, tens de clicar em <b>Descarregar dados.js</b> e substituir o ficheiro antigo no teu repositório GitHub.</div>
+    <div class="editor-layout">
+      <aside class="sidebar">
+        <div class="sidebar-title">SEÇÕES</div>
+        <button type="button" id="nav-projects" class="side-btn active">▦ <span>Projetos</span></button>
+        <button type="button" id="nav-profile" class="side-btn">◉ <span>Perfil e contactos</span></button>
+        <div class="sidebar-divider"></div>
+        <button type="button" id="export-side" class="export-btn">↓ Descarregar dados.js</button>
+        <button type="button" id="reset" class="reset-btn">Repor versão publicada</button>
+      </aside>
+      <section class="editor-panel" id="projects-panel">
+        <div class="panel-title"><div><h2>Os meus projetos</h2><p>Seleciona um projeto para alterar os detalhes ou cria um novo.</p></div><button id="add-project" class="btn-primary" type="button">+ Novo projeto</button></div>
+        <div class="project-editor-grid"><div class="project-list" id="project-list" aria-label="Lista de projetos"></div>
+          <form id="project-form" class="form" novalidate>
+            <label>Nome do projeto<input type="text" id="p-title" placeholder="Ex.: Separar+" required maxlength="100"></label>
+            <label>Categoria<input type="text" id="p-category" placeholder="Ex.: Sustentabilidade" maxlength="80"></label>
+            <label>Descrição<textarea id="p-description" rows="4" placeholder="O que faz o projeto?"></textarea></label>
+            <label>Detalhes <small>(opcional; aparecem no botão «Ver Detalhes»)</small><textarea id="p-details" rows="4" placeholder="Explica o objetivo, as funcionalidades e o que aprendeste."></textarea></label>
+            <label>Tecnologias <small>(separadas por vírgulas)</small><input type="text" id="p-tech" placeholder="HTML, CSS, JavaScript"></label>
+            <label>Ícone de destaque<select id="p-icon"><option value="reciclagem">Reciclagem</option><option value="livro">Livro</option><option value="quimica">Química</option><option value="outro">Código / Outro</option></select></label>
+            <div class="field-divider"><span>LINKS</span></div>
+            <label>Ver Projeto — link do site publicado<input type="url" id="p-url" placeholder="https://meu-site.github.io/projeto/"><small>Deixa em branco se ainda não publicaste o projeto.</small></label>
+            <label>Ver Código — link do GitHub<input type="url" id="p-code" placeholder="https://github.com/utilizador/projeto"></label>
+            <div class="form-actions"><button class="btn-primary" id="save-project" type="submit">Guardar alterações</button><button class="btn-plain" id="move-up" type="button">↑ Subir</button><button class="btn-plain" id="move-down" type="button">↓ Descer</button><button class="btn-danger" id="delete-project" type="button">Eliminar</button></div>
+          </form>
+        </div>
+      </section>
+      <section class="editor-panel" id="profile-panel" hidden>
+        <div class="panel-title"><div><h2>Perfil e contactos</h2><p>Informações que aparecem no portefólio e no currículo para impressão.</p></div></div>
+        <form id="profile-form" class="form profile-form">
+          <label>Nome<input id="u-name" type="text" maxlength="100"></label>
+          <label>O que fazes? <small>(texto principal)</small><input id="u-title" type="text" maxlength="120"></label>
+          <label>Apresentação curta<textarea id="u-intro" rows="3"></textarea></label>
+          <label>Perfil<textarea id="u-about" rows="6"></textarea></label>
+          <label>Email para contacto<input id="u-email" type="email" placeholder="email@exemplo.pt"></label>
+          <label>Perfil de GitHub <small>(opcional)</small><input id="u-github" type="url" placeholder="https://github.com/o-teu-utilizador"></label>
+          <p class="privacy">Atenção: tudo o que publicares neste site será público. É preferível não acrescentar morada de casa, número pessoal ou outros dados privados.</p>
+          <button type="submit" class="btn-primary">Guardar perfil</button>
+        </form>
+      </section>
+    </div>
+    <div class="bottom-box"><div><h3>Pronto para publicar?</h3><p>Descarrega o ficheiro, troca o <code>dados.js</code> antigo pelo novo na pasta do site e envia os ficheiros para o GitHub.</p></div><button id="export-bottom" type="button" class="btn-primary">↓ Descarregar dados.js</button></div>
+    <div id="message" class="toast" role="status" aria-live="polite" hidden></div>
+  </main>
+</body>
+</html>
+
