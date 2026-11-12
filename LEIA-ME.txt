@@ -1,0 +1,58 @@
+PORTFÓLIO DE SANTIAGO CORREIA
+============================
+
+1. COMO VER O SITE
+   - Abre o ficheiro index.html no navegador.
+   - O site funciona sem instalar programas nem servidores.
+
+2. COMO ADICIONAR LINKS E PROJETOS (SEM PROGRAMAR)
+   - Abre editar.html.
+   - Escolhe "Separar+" ou outro projeto.
+   - Cola o endereço do site publicado no campo "Ver Projeto".
+   - Cola o endereço do repositório no campo "Ver Código" (se tiveres).
+   - Clica em "Guardar alterações".
+   - Para adicionar um novo projeto, usa "+ Novo projeto".
+   - Clica em "Descarregar dados.js".
+   - Substitui o ficheiro dados.js antigo pelo ficheiro descarregado.
+   - Volta a abrir index.html para ver as alterações.
+
+   IMPORTANTE: O editor guarda um rascunho apenas neste navegador.
+   As alterações SÓ FICAM PUBLICADAS quando substituis o dados.js no GitHub.
+
+3. COMO PUBLICAR NO GITHUB PAGES
+   - Inicia sessão em https://github.com
+   - Cria um repositório público (por exemplo: portfolio-santiago).
+   - Envia TODOS os ficheiros deste pacote, incluindo a pasta assets.
+     O ficheiro index.html deve ficar na RAIZ do repositório.
+   - Abre Settings > Pages.
+   - Em Build and deployment, escolhe "Deploy from a branch".
+   - Seleciona a branch principal (normalmente main) e a pasta / (root).
+   - Guarda (Save).
+   - O GitHub apresenta o endereço público do portefólio após a publicação.
+
+   Para atualizar um projeto no futuro, basta enviar o novo dados.js.
+
+4. COMO CRIAR UM CV EM PDF
+   - Abre cv.html.
+   - Carrega em "Guardar em PDF / Imprimir".
+   - Na janela de impressão, escolhe "Guardar como PDF".
+
+5. COMO MUDAR A FOTOGRAFIA
+   - Troca assets/perfil.jpg por uma nova fotografia com o MESMO nome.
+   - Se já estiver publicado, atualiza esse ficheiro no GitHub.
+
+6. QUE FICHEIROS NÃO DEVO APAGAR?
+   - index.html: página principal
+   - style.css: aspeto do site
+   - script.js: funções do site
+   - dados.js: informações, projetos e links
+   - editar.html, editor.css, editor.js: editor de projetos e perfil
+   - cv.html, cv.css, cv.js: currículo para imprimir/guardar em PDF
+   - assets/: fotografia e ícone do site
+
+PRIVACIDADE
+   Este pacote inclui apenas o email escolar apresentado no currículo.
+   A morada completa e o número de telemóvel não foram incluídos.
+   Lembra-te: qualquer informação publicada no GitHub Pages fica visível
+   para toda a gente.
+
