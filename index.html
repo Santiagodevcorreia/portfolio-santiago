@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8fbfd">
+  <meta name="description" content="Portefólio de Santiago Correia, estudante de Gestão e Programação de Sistemas Informáticos. Conhece os seus projetos, competências e percurso académico.">
+  <title>Santiago Correia — Portefólio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="dados.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+  <div class="announcement" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="#inicio" aria-label="Santiago Correia, voltar ao início"><span class="brand-mark">SC<span>.</span></span><span class="brand-name">santiago<span>correia</span></span></a>
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#sobre">Sobre mim</a>
+        <a href="#competencias">Competências</a>
+        <a href="#formacao">Formação</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#perguntas">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Ativar modo escuro" aria-pressed="false"><span aria-hidden="true">☾</span><span class="theme-label">Modo escuro</span></button>
+        <a class="nav-contact" href="#contactos">Contactar <span aria-hidden="true">↗</span></a>
+        <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Navegação móvel" hidden>
+      <a href="#sobre">Sobre mim</a><a href="#competencias">Competências</a><a href="#formacao">Formação</a><a href="#projetos">Projetos</a><a href="#contactos">Contactos</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-dots" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> OLÁ, BEM-VINDO AO MEU PORTFÓLIO</span>
+          <h1 id="hero-title">Sou o <span>Santiago</span><br> Correia<span class="title-period">.</span></h1>
+          <p class="hero-role" id="hero-role">Estudante de Programação</p>
+          <p class="hero-intro" id="hero-intro">Gosto de transformar ideias em projetos úteis, aprender novas tecnologias e encontrar soluções para problemas reais.</p>
+          <div class="hero-buttons"><a class="btn btn-primary" href="#projetos">Explorar projetos <span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="cv.html">Ver o meu CV <span aria-hidden="true">↓</span></a></div>
+          <div class="hero-facts"><div class="fact"><span class="fact-number">11.º</span><span class="fact-caption">Ano escolar</span></div><div class="fact-divider"></div><div class="fact"><span class="fact-number">TGPSI</span><span class="fact-caption">Área de formação</span></div><div class="fact-divider"></div><div class="fact"><span class="fact-number" id="project-count">03</span><span class="fact-caption">Projetos em destaque</span></div></div>
+        </div>
+      </div>
+      <div class="hero-wave" aria-hidden="true"><svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0 52C160 12 318 12 478 49S791 92 964 53 1237 8 1440 46V100H0Z" fill="#fff"></path></svg></div>
+    </section>
+
+    <section class="section about-section" id="sobre">
+      <div class="container about-grid">
+        <div class="section-illustration reveal" aria-hidden="true"><div class="mini-window"><div class="window-top"><i></i><i></i><i></i></div><div class="window-code"><div><em>const</em> <b>sobreMim</b> <span>= {</span></div><div class="indent"><span>area:</span> <strong>'Programação',</strong></div><div class="indent"><span>objetivo:</span> <strong>'Aprender',</strong></div><div class="indent"><span>atitude:</span> <strong>'Criar'</strong></div><div><span>}</span>;</div><div class="cursor">▍</div></div></div><div class="window-shadow"></div></div>
+        <div class="reveal">
+          <span class="section-kicker">01 / SOBRE MIM</span>
+          <h2 class="section-title">Curiosidade por tecnologia.<br><span>Vontade de aprender.</span></h2>
+          <p class="section-description" id="perfil-texto">Sou estudante do 11.º ano do curso de Técnico de Gestão e Programação de Sistemas Informáticos, na Escola Profissional de Setúbal. Procuro uma oportunidade de estágio para aprender em contexto profissional e aplicar os conhecimentos desenvolvidos ao longo do curso.</p>
+          <div class="about-note"><span class="note-icon" aria-hidden="true">✦</span><span>Gosto de trabalhar em equipa, assumir responsabilidades e descobrir novas formas de resolver problemas.</span></div>
+          <a href="#contactos" class="text-link">Vamos conversar <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="competencias">
+      <div class="container">
+        <div class="section-heading reveal"><div><span class="section-kicker">02 / O QUE SEI FAZER</span><h2 class="section-title">As minhas <span>competências.</span></h2></div><p>Conhecimentos técnicos e capacidades pessoais que vou desenvolvendo ao longo do meu percurso.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><div class="skill-icon skill-icon-code" aria-hidden="true">&lt;/&gt;</div><h3>Tecnologias e ferramentas</h3><p>Linguagens e ferramentas que já utilizei em trabalhos e projetos.</p><div id="skills-technical" class="pill-list"></div></article>
+          <article class="skill-card reveal"><div class="skill-icon skill-icon-personal" aria-hidden="true">✳</div><h3>Competências pessoais</h3><p>Qualidades que valorizo na escola e no trabalho em equipa.</p><div id="skills-personal" class="pill-list"></div></article>
+          <article class="skill-card reveal"><div class="skill-icon skill-icon-language" aria-hidden="true">文</div><h3>Idiomas</h3><p>Línguas que utilizo para comunicar e continuar a aprender.</p><div id="skills-languages" class="language-list"></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education-section" id="formacao">
+      <div class="container education-grid">
+        <div class="education-heading reveal"><span class="section-kicker">03 / O MEU PERCURSO</span><h2 class="section-title">Sempre a dar<br><span>o próximo passo.</span></h2><p>O meu percurso académico até agora, com foco na área da informática e da programação.</p><div class="education-deco" aria-hidden="true"><span>01</span><span>02</span><span>03</span></div></div>
+        <div id="education-list" class="timeline"></div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projetos">
+      <div class="container">
+        <div class="section-heading projects-heading reveal"><div><span class="section-kicker">04 / TRABALHOS EM DESTAQUE</span><h2 class="section-title">Projetos que <span>ganharam vida.</span></h2></div><p>Alguns dos projetos que desenvolvi na escola e onde coloquei em prática o que aprendi.</p></div>
+        <div id="projects-grid" class="projects-grid" aria-live="polite"></div>
+        <p class="projects-footnote">Os botões de projetos ficam disponíveis assim que adicionares os respetivos links no editor.</p>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="perguntas" aria-labelledby="faq-title">
+      <div class="container faq-layout">
+        <div class="faq-intro reveal"><span class="section-kicker">05 / PERGUNTAS FREQUENTES</span><h2 id="faq-title" class="section-title">Vamos esclarecer<br><span>as dúvidas.</span></h2><p>Informação rápida sobre o meu portefólio, os projetos e as formas de contacto.</p></div>
+        <div class="faq-list reveal">
+          <details class="faq-item"><summary>Que tipo de projetos desenvolves?</summary><p>Desenvolvo projetos escolares e pessoais relacionados com programação, websites e aplicações desktop.</p></details>
+          <details class="faq-item"><summary>Que tecnologias já utilizaste?</summary><p>Tenho experiência com HTML, CSS, JavaScript e C#, além de várias ferramentas de produtividade.</p></details>
+          <details class="faq-item"><summary>Posso ver os teus projetos?</summary><p>Sim. Na secção Projetos podes abrir os trabalhos publicados assim que os respetivos links forem adicionados.</p></details>
+          <details class="faq-item"><summary>Como posso entrar em contacto?</summary><p>Podes usar o botão de email no final desta página para entrares em contacto comigo.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contactos">
+      <div class="container contact-panel reveal">
+        <div class="contact-drawing" aria-hidden="true">✳</div>
+        <span class="contact-eyebrow">06 / VAMOS FALAR?</span>
+        <h2>O próximo projeto pode<br><em>começar aqui.</em></h2>
+        <p>Estou disponível para conversar sobre oportunidades de estágio, programação e novos projetos.</p>
+        <div class="contact-actions"><a id="email-link" class="btn btn-white" href="mailto:scorreia.11638@alunos.eps.pt">Enviar email <span aria-hidden="true">↗</span></a><a id="github-link" class="btn btn-outline-white" href="#" target="_blank" rel="noopener noreferrer" hidden>O meu GitHub <span aria-hidden="true">↗</span></a></div>
+        <span class="contact-fine">Setúbal, Portugal · Escola Profissional de Setúbal</span>
+      </div>
+    </section>
+  </main>
+  <dialog id="project-dialog" class="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-header"><span class="section-kicker">DETALHES DO PROJETO</span><button id="dialog-close" class="dialog-close" type="button" aria-label="Fechar detalhes">×</button></div>
+    <h2 id="dialog-title"></h2><p id="dialog-description"></p><div id="dialog-tech" class="project-tags"></div><div id="dialog-links" class="dialog-links"></div>
+  </dialog>
+  <footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="#inicio">SC<span>.</span></a><span>© <span id="year"></span> Santiago Correia. Feito com dedicação.</span><a href="#inicio" class="back-top">Voltar ao topo ↑</a></div></footer>
+</body>
+</html>
+
